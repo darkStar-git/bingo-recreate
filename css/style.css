@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+
+/* explica */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+}
+
+section h2 {
+font-family: 'Righteous', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #4b1ab1;
+  margin-bottom: 10px;
+  background-color: #e3ff2d;
+  padding-left: 10px;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+
+  .carrossel {
+    height: auto;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .carrossel p {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+
+}

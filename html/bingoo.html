@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../img/fav-bingo.png">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/bingo.css">
+    <title>Sorteio do Bingo</title>
+</head>
+
+<body>
+     <header>
+    <a href="../index.html">
+        <div class="logo">
+           <img src="../img/bingo.png" alt="" width="140px" height="50px">
+        </div>
+    </a>
+
+    <!--navbar-->
+    <nav>
+      <button class="btn">Comece uma partida</button>
+      <a href="./dev.html">Desenvolvedores</a>
+    </nav>
+ </header>
+
+    <main>
+        <!-- Últimos 5 -->
+        <div class="screen">
+            <div id="sorted5" class="ultimos-5"></div>
+
+            <!-- Último número em destaque -->
+            <div id="lastSort" class="ultimo-sort"></div>
+
+            <!-- Botões da primeira tela -->
+            <div class="botoes">
+                <button class="botao-sort" onclick="sort()">
+                    <i class="fas fa-dice-five"></i>
+                    <span>Sortear número</span>
+                </button>
+                <button class="botao-bingo">
+                    <a href="#total">
+                        <i class="fas fa-hand"></i>
+                        <span>BINGO</span>
+                    </a>
+
+                </button>
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <div id="total" class="screen">
+            <h2 style="margin-top: 20px;">Números sorteados</h2>
+            <!-- Todos os números sorteados -->
+            <div id="allSorted" class="todos-sorteados"></div>
+
+            <!-- Botão de reiniciar -->
+            <button class="botao-restart" onclick="restart()">
+                <i class="fas fa-rotate-right"></i>
+                <span>Reiniciar Bingo</span>
+            </button>
+        </div>
+
+    </main>
+
+    <script src="../js/sort.js"></script>
+</body>
+
+</html>
